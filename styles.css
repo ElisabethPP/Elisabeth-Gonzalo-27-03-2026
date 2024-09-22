@@ -65,15 +65,17 @@ header h1 {
 
 header .poster {
     background-image: url('img/foto5.jpg'); /* Reemplaza 'tu-imagen.jpg' por el nombre de tu archivo */
-    background-size: cover; /* Ocupa todo el espacio */
-    background-position: center center; /* Centra la imagen */
-    background-attachment: scroll; /* Deshabilita el scroll fijo en móviles */
-    background-repeat: no-repeat; /* Evita repetición de la imagen */
-    height: 100vh; /* Ocupa toda la altura del viewport */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-size: cover; /* Asegura que la imagen cubra toda el área del header */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%; /* La imagen cubrirá todo el ancho */
+    height: 100%; /* La imagen cubrirá todo el alto */
+    display: flex; /* Para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    color: white; /* Cambia el color del texto a blanco */
+    text-align: center; /* Alinea el texto en el centro */
+    background-attachment: fixed; /* Para evitar que se desplace al hacer scroll */
 }
 
 header .cta-button {
@@ -456,34 +458,6 @@ body {
     }
 }
 
-/* Estilos móviles */
-@media (max-width: 768px) {
-    /* Ajustes del título */
-    header h1 {
-        font-size: 24px; /* Tamaño de texto más pequeño */
-        margin: 10px 0; /* Espaciado entre elementos */
-        text-align: center; /* Centrar el texto */
-        width: 100%; /* Asegurar que no desborde */
-        padding: 0;
-    }
-
-    /* Ajuste de los nombres */
-    header p.names {
-        font-size: 18px;
-        text-align: center; /* Centrar nombres */
-        width: 100%; /* Ocupa todo el ancho disponible */
-        padding: 0 10px; /* Asegurar que tenga algo de espacio */
-    }
-
-    /* Botones */
-    header .cta-button {
-        font-size: 16px;
-        padding: 10px 20px;
-        width: auto;
-        margin: 10px auto; /* Centramos el botón */
-        display: block;
-    }
-}
 
 
 
