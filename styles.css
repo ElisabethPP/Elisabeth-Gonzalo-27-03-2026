@@ -496,6 +496,70 @@ body {
     }
 }
 
+@media (max-width: 600px) {
+    body {
+        background-size: cover; /* Asegura que la imagen de fondo cubra todo */
+        background-position: center; /* Centra la imagen */
+        background-attachment: fixed; /* Evita que se mueva al hacer scroll */
+    }
+
+    header .poster {
+        background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+        background-position: center;
+        height: auto; /* Permitir que el header se ajuste a su contenido en móviles */
+        padding: 20px; /* Añade padding para mejorar el aspecto en móviles */
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px; /* Reduce el tamaño del texto para móviles */
+        padding-top: 50px; /* Ajusta el espaciado superior */
+        left: 0; /* Centra el texto horizontalmente */
+        text-align: center;
+    }
+
+    header p.names {
+        font-size: 18px; /* Tamaño más pequeño del texto para nombres */
+        margin: 0 auto; /* Centrar el texto en móviles */
+        left: 0; /* Eliminar el desplazamiento hacia la izquierda */
+        text-align: center;
+    }
+
+    header .cta-button {
+        padding: 10px 15px; /* Ajusta el tamaño del botón */
+        font-size: 14px; /* Reduce el tamaño de fuente en el botón */
+        left: 0; /* Centra el botón */
+        margin: 20px auto; /* Añade margen y centra en móviles */
+        display: block;
+        text-align: center;
+    }
+
+    #details {
+        width: 100%; /* Asegura que la sección de detalles ocupe todo el ancho en móviles */
+        position: relative; /* Cambia la posición a relativa para evitar superposiciones */
+        margin: 20px 0; /* Añade margen alrededor */
+        top: auto; /* Elimina la posición fija */
+        right: auto; /* Elimina la posición a la derecha */
+    }
+
+    #map {
+        width: 100%; /* Asegura que el mapa ocupe todo el ancho */
+        height: 200px; /* Ajusta la altura del mapa para móviles */
+        right: 0; /* Elimina el desplazamiento */
+        top: auto; /* Elimina la posición fija */
+        position: relative;
+    }
+}
+
+@media (max-width: 600px) {
+    header .poster {
+        display: flex;
+        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        align-items: center; /* Centra los elementos horizontalmente */
+        justify-content: center; /* Centra los elementos verticalmente */
+    }
+}
 
 
 
