@@ -10,8 +10,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
-    background-image: url('img/cine.jfif'); /* Reemplaza con tu imagen */
-    background-size: auto; 
+    background-image: url('img/cine4.jpg'); /* Reemplaza con tu imagen */
+    background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
     color: #fff; 
@@ -400,13 +400,6 @@ body {
     font-weight: bold; /* Hace que el texto sea negrita */
 }
 
-@media (max-width: 600px) {
-    #elemento {
-        font-size: 14px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
-        /* Otros estilos */
-    }
-}
-
 /* Mobile Styles */
 @media (max-width: 600px) {
     header h1 {
@@ -429,6 +422,77 @@ body {
     #map iframe {
         width: 100%;
         height: 200px; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 600px) {
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 16px;
+        top: auto;
+        left: auto;
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .cast-grid {
+        flex-direction: column; /* Alinea en una sola columna */
+        gap: 20px; /* Añade algo de espacio entre los elementos */
+    }
+
+    .cast-row {
+        flex-direction: column; /* Para que las filas se comporten como columnas */
+        align-items: center;
+        margin-left: 0; /* Resetea el margen para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+        left: 0;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    header .cta-button {
+        left: 0;
+        top: auto;
+        margin: 20px auto;
+    }
+
+    #gallery img {
+        max-width: 100%; /* Ajusta el ancho de la imagen a la pantalla */
+        height: auto; /* Deja que la altura se ajuste automáticamente */
+    }
+
+    .cast-member img {
+        width: 60px; /* Disminuye el tamaño en pantallas pequeñas */
+        height: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    #map {
+        width: 100px;
+        height: 100px;
+        right: 10px;
+    }
+
+    #details {
+        top: auto;
+        right: 10px;
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        padding: 10px;
+        text-align: center;
     }
 }
 
