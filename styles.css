@@ -407,7 +407,78 @@ body {
     }
 }
 
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px; /* Tamaño de fuente más pequeño */
+        left: 20px; /* Mueve el título a la izquierda */
+    }
 
+    header .cta-button {
+        top: 200px; /* Ajusta la posición del botón */
+        left: 0; /* Centra el botón */
+        right: 0; /* Centra el botón */
+        margin: 0 auto; /* Centra horizontalmente */
+    }
+
+    header p.names {
+        font-size: 24px; /* Tamaño de fuente más pequeño */
+        left: 0; /* Centra el texto */
+    }
+
+    header p.date {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+        left: 0; /* Centra el texto */
+    }
+
+    #trailer {
+        width: 90%; /* Hace que el ancho sea más flexible */
+        margin: 10px auto; /* Centra la sección */
+    }
+
+    #details .details-info {
+        flex-direction: column; /* Cambia a columna para pantallas pequeñas */
+    }
+
+    #details .details-info div {
+        margin: 10px 0; /* Espaciado vertical */
+        width: 100%; /* Asegura que ocupe todo el ancho */
+    }
+
+    #cast .cast-grid {
+        flex-direction: column; /* Cambia a columna */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .cast-member img {
+        width: 80px; /* Tamaño más pequeño para imágenes */
+        height: 80px;
+    }
+
+    #gallery img {
+        max-width: 100%; /* Asegura que la imagen no exceda el ancho */
+        height: auto; /* Mantiene la proporción */
+    }
+
+    #rsvp form {
+        width: 90%; /* Hace que el formulario sea flexible */
+    }
+
+    #map {
+        width: 100%; /* Hace que el mapa ocupe todo el ancho */
+        height: auto; /* Mantiene la proporción */
+    }
+
+    #reviews {
+        width: 90%; /* Hace que el ancho sea flexible */
+        height: auto; /* Altura automática para contenido */
+    }
+
+    #dress-code {
+        left: 10px; /* Ajusta la posición */
+        bottom: 10px; /* Ajusta la posición */
+        width: 90%; /* Hace que ocupe un mayor ancho */
+    }
+}
 
 
 
