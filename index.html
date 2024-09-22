@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+    <div class="container">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Boda de Elisabeth & Gonzalo - 27/03/2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Home: Poster de la película -->
+    <header id="home">
+        <div class="poster">
+            <h1>La Película de Nuestra Vida</h1>
+            <p class="names">Elisabeth & Gonzalo</p>
+            <p class="date">27/03/2026</p>
+            <a href="#rsvp" class="cta-button">Reservar Asiento</a>
+        </div>
+    </header>
+    
+
+    <!-- Nuestra Historia: Tráiler -->
+    <section id="trailer">
+        <h2>Conoce a los protagonistas</h2>
+        <p>De desconocidos a coprotagonistas en una historia de amor eterna.</p>
+    </section>
+
+    <section id="countdown">
+        <h2>Cuenta Atrás</h2>
+        <div id="countdown-timer">
+            <span id="days"></span> Días
+            <span id="hours"></span> Horas
+            <span id="minutes"></span> Minutos
+            <span id="seconds"></span> Segundos
+        </div>
+    </section>
+
+<!-- Detalles de la Boda -->
+<section id="details">
+    <h2>El Gran Estreno: 27 de marzo de 2026</h2>
+    <p>Pronto en tu cine más cercano</p>
+    <div class="details-box">
+        <div>
+            <h3>Fecha y Hora</h3>
+            <p>27 de marzo de 2026, 16:30</p>
+        </div>
+        <div>
+            <h3>Lugar de la Ceremonia</h3>
+            <p>Dirección: Can Pobric, Maçanet de la Selva, 17412, Girona</p>
+        </div>
+    </div>
+</section>
+
+<!-- Mapa de Google -->
+<section id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.6648216223293!2d2.6982000764805543!3d41.792436670772545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12bb23f5ca9db227%3A0xdc72aff657f0e9c7!2sCan%20Pobric%2C%2017412%20Ma%C3%A7anet%20de%20la%20Selva%2C%20Girona!5e0!3m2!1sca!2ses!4v1726935903445!5m2!1sca!2ses" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<!-- Críticas de Cine -->
+<section id="reviews">
+    <div class="review">
+        <p>"No han reparado en gastos."</p>
+        <div class="stars">★★★★☆</div>
+        <p class="reviewer">- John Hammond</p>
+    </div>
+    <div class="review">
+        <p>"Quizá no habrá matrimonio, pero por Dios, seguro que habrá baile."</p>
+        <div class="stars">★★★★★</div>
+        <p class="reviewer">- George Downes</p>
+    </div>
+    <div class="review">
+        <p>"Creí que era un burdel, me equivoqué"</p>
+        <div class="stars">★★★☆☆</div>
+        <p class="reviewer">- Jack Sparrow</p>
+    </div>
+</section>
+
+
+    <!-- Reparto Estelar --> 
+    <section id="cast">
+        <h2>Créditos</h2>
+        <div class="cast-grid">
+            <div class="cast-row">
+                <div class="cast-member">
+                    <img src="Bagheera.jpg" alt="Técnica de sonido">
+                    <p>Técnica de sonido</p>
+                </div>
+                <div class="cast-member">
+                    <img src="Sherlock.jpg" alt="Doble de riesgo">
+                    <p>Doble de riesgo</p>
+                </div>
+            </div>
+            <div class="cast-row">
+                <div class="cast-member">
+                    <img src="Bruno.jpg" alt="Camarógrafo">
+                    <p>Camarógrafo</p>
+                </div>
+                <div class="cast-member">
+                    <img src="Benancio.jpg" alt="Seguridad">
+                    <p>Seguridad</p>
+                </div>
+            </div>
+            <div class="cast-row"> <!-- Nueva fila para Caroltomas -->
+                <div class="cast-member">
+                    <img src="caroltomas.jpg" alt="Efectos especiales">
+                    <p>Efectos especiales</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <audio id="background-music" loop autoplay controls>
+        <source src="Love Theme.mp3" type="audio/mpeg">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+    
+    <script>
+        // Intenta reproducir la música al cargar
+        document.addEventListener('DOMContentLoaded', function() {
+            const music = document.getElementById('background-music');
+            music.play().catch(error => {
+                console.log('La reproducción automática fue bloqueada. Haga clic en los controles para reproducir.');
+            });
+        });
+    </script>
+    
+
+    <!-- Galería de Fotos -->
+    <section id="gallery">
+        <h2>Revive los mejores momentos</h2>
+        <div class="gallery-grid">
+            <img src="foto6.jpg" alt="Disney">
+            <img src="foto4.jpg" alt="Navidad">
+            <img src="foto2.jpg" alt="Roma">
+            <img src="foto7.jpeg" alt="HP">
+        </div>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp">
+        <h2>¡No te pierdas el estreno!</h2>
+        <p>Reserva tu asiento para la película más romántica del año (recuerda confirmar a todos los asistentes).</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf41cK5S8zuVlGE-Hg22DfDpgZf5P0oDEDvVrXl1yQT7xerpw/viewform?usp=sf_link" target="_blank" class="cta-button">Confirmar Asistencia</a>
+    </section>
+
+    <section id="dress-code">
+        <h2>¡Brilla sin Esfuerzo! Código de Vestimenta</h2>
+        <p>No es necesario que vengas de gala. Puedes optar por un atuendo cómodo que te permita disfrutar de la velada. Recuerda que, al ser en una masía y en el mes de marzo, es mejor evitar los tacones y abrigarte un poco para que te sientas cómodo.</p>
+    </section>
+    
+    <!-- Sección de Regalos -->
+<section id="regalos">
+    <h2>Regalos</h2>
+    <p>En esta película llamada vida, lo más importante es que estés presente en nuestra gran premiere.</p> 
+    <p>Si deseas, en lugar de regalos, ¡te invitamos a ser nuestro productor ejecutivo! Tu apoyo nos ayudará a crear nuestra propia historia en la gran pantalla. 🎬❤️</p>
+    <p>Cuenta bancaria: <strong>ESXX XXXX XXXX XXXX XXXX XXXX</strong></p>
+</section>
+
+    <!-- Créditos -->
+    <footer>
+        <p>¡Gracias por ser parte de nuestro elenco en este día especial!</p>
+        <p>Elisabeth & Gonzalo | 27/03/2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        // Fecha objetivo
+        const countdownDate = new Date("2026-03-27T00:00:00").getTime(); // Cambia esta fecha a la deseada
+    
+        // Actualiza la cuenta atrás cada segundo
+        const x = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+    
+            // Calcula el tiempo restante
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+            // Muestra el resultado en los elementos correspondientes
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+    
+            // Si la cuenta atrás ha terminado, muestra un mensaje
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown-timer").innerHTML = "¡La cuenta atrás ha terminado!";
+            }
+        }, 1000);
+    </script>
+    
+</body>
+</div>
+</html>

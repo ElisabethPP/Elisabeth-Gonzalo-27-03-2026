@@ -1,0 +1,418 @@
+/* Fuentes */
+
+.container {
+    border: 10px solid black;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url('img/cine.jfif'); /* Reemplaza con tu imagen */
+    background-size: auto; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    color: #fff; 
+}
+
+#trailer {
+    background-color: rgba(255, 255, 255, 0); /* Fondo blanco con opacidad */
+    color: #f3f1f1; /* Color del texto */
+    padding: 40px; /* Espaciado interior */
+    margin: 20px; /* Espaciado exterior */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 300px; /* Ajusta el ancho de la sección */
+    text-align: left; /* Alinea el texto a la izquierda */
+    box-shadow: 0 0 15px rgb(255, 0, 0); /* Borde luminoso rojo */
+    border: 2px solid rgba(255, 0, 0, 0.7); /* Borde rojo */
+}
+
+#trailer h2 {
+    font-size: 28px; /* Tamaño de la fuente del título */
+    margin-bottom: 10px; /* Espaciado inferior del título */
+}
+
+#trailer p {
+    font-size: 18px; /* Tamaño de la fuente del párrafo */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+
+
+h1, h2 {
+    font-family: 'Cinzel', serif;
+}
+
+/* Estilo General */
+header {
+    height: 100vh; /* La altura será el 100% de la pantalla del dispositivo */
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    position: relative; 
+    left: 470px; 
+    padding-top: 150px; 
+    text-align: center; 
+    font-size: 36px; 
+    color: white; 
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+}
+
+header .poster {
+    background-image: url('img/foto5.jpg'); /* Reemplaza 'tu-imagen.jpg' por el nombre de tu archivo */
+    background-size: cover; /* Asegura que la imagen cubra toda el área del header */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%; /* La imagen cubrirá todo el ancho */
+    height: 100%; /* La imagen cubrirá todo el alto */
+    display: flex; /* Para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    color: white; /* Cambia el color del texto a blanco */
+    text-align: center; /* Alinea el texto en el centro */
+}
+
+header .cta-button {
+    position: relative;
+    top: 320px; /* Ajusta este valor para mover más abajo */
+    padding: 10px 20px;
+    left: -845px;
+    background-color: rgba(248, 244, 244, 0.945);
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilo para los nombres */
+header p.names {
+    position: relative;
+    top: 150px;           /* Ajusta para bajar o subir */
+    left: -190px; 
+    text-align: center;
+    font-size: 44px;
+    color: white;
+    white-space: nowrap;
+}
+
+header .poster p.names {
+    font-size: 36px;  /* Ajusta el tamaño aquí */
+}
+
+header p.date {
+    position: relative;
+    top: 230px;           /* Baja el texto 100px */
+    margin-top: 5px;
+    left: -570px;          /* Mueve el texto 50px hacia la izquierda */
+    text-align: center;   /* Centrado dentro del propio elemento */
+    font-size: 18px;
+    color: white;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+
+
+header .poster h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+header .poster p {
+    font-size: 1.5rem;
+}
+
+.cta-button {
+    background-color: #d4af37;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+#details .details-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+#details .details-info div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cast .cast-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cast-member {
+    text-align: center;
+}
+
+.cast-member img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#gallery .gallery-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+#gallery {
+    margin-top: 90px; /* Ajusta este valor para mover la galería más abajo */
+}
+
+#gallery img {
+    width: auto; /* Permitir que el ancho sea automático */
+    max-width: 350px; /* Aumenta el ancho máximo */
+    height: 450px; /* Aumenta la altura */
+    object-fit: cover; /* Mantiene la proporción sin deformar la imagen */
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.7); /* Sombra brillante */
+    transition: transform 0.3s ease;
+}
+
+#gallery img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente la imagen al pasar el ratón */
+}
+
+
+#gallery h2 {
+    text-shadow: 0 0 10px rgba(255, 215, 0, 1), 0 0 20px rgba(255, 215, 0, 0.8); /* Bordes luminosos amarillos */
+}
+
+
+#rsvp form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rsvp label, #rsvp input, #rsvp select {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+#rsvp button {
+    background-color: #d4af37;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#details {
+    position: absolute;
+    top: 930px; /* Ajusta esto según sea necesario */
+    right: 50px; /* Mueve la sección hacia la derecha */
+    width: 300px; /* Ajusta el ancho de la sección */
+    background-color: rgba(0, 0, 0, 0); /* Fondo semitransparente negro */
+    color: white; /* Color del texto */
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10; /* Para asegurar que esté encima de otros elementos */
+    
+}
+
+.details-box {
+    background-color: rgba(255, 255, 255, 0); /* Fondo transparente */
+    border: 2px solid rgba(255, 0, 0, 0.7); /* Borde rojo */
+    box-shadow: 0 0 10px rgb(255, 0, 0); /* Borde luminoso rojo */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interno */
+}
+
+body {
+    margin: 0; /* Elimina el margen del body */
+    padding: 0; /* Elimina el padding del body */
+}
+
+.details-info div {
+    background-color: transparent; /* Fondo transparente */
+    padding: 10px; /* Añadir un poco de espacio interno */
+    border: 1px solid rgba(255, 0, 0, 0.7); /* Borde rojo */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+#map {
+    position: absolute; /* Posiciona el mapa de forma absoluta */
+    top: 1330px; /* Ajusta la altura según sea necesario */
+    right: 130px; /* Mueve el mapa hacia la derecha */
+    width: 150px; /* Ancho del mapa más pequeño */
+    height: 150px; /* Altura del mapa igual al ancho para mantener la proporción cuadrada */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente (opcional) */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 15px rgb(255, 0, 0); /* Sombra roja */
+}
+
+#map iframe {
+    width: 100%; /* Hace que el mapa ocupe todo el ancho del contenedor */
+    height: 100%; /* Hace que el mapa ocupe todo el alto del contenedor */
+    border-radius: 10px; /* Bordes redondeados en el iframe */
+}
+
+#cast {
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.cast-grid {
+    display: flex;
+    flex-direction: column; /* Colocar en una columna */
+    align-items: center; /* Alinear los elementos al centro */
+}
+
+.cast-row {
+    display: flex; /* Alinear en filas */
+    gap: 40px; /* Espaciado entre las imágenes en la fila */
+    margin-bottom: 15px; /* Espaciado entre las filas */
+    margin-left: -1500px; /* Ajusta este valor para mover más a la izquierda */
+}
+
+.cast-member {
+    text-align: center; /* Centra el texto */
+}
+
+.cast-member img {
+    width: 100px; /* Establecer un tamaño uniforme */
+    height: 100px; /* Establecer la misma altura */
+    border-radius: 50%; /* Hacer que las imágenes sean redondas */
+    object-fit: cover; /* Asegura que la imagen mantenga la proporción */
+    margin-bottom: 10px; /* Espaciado inferior */
+    filter: brightness(0.7) contrast(1.0); /* Ajusta el brillo y el contraste */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7), 0 0 20px rgba(255, 215, 0, 0.5); /* Borde luminoso amarillo */
+}
+
+
+#cast h2 {
+    font-family: 'Cinzel', serif; /* Cambia a la fuente elegida */
+    margin-left: 80px; /* Ajusta este valor para moverlo más a la derecha */
+    color: white; /* Asegúrate de que el texto sea visible */
+}
+
+.cast-member p {
+    font-family: 'Cinzel', serif; /* Cambia a la fuente elegida */
+    font-size: 16px; /* Ajusta el tamaño según tus necesidades */
+    text-align: center; /* Centra el texto bajo la imagen */
+    color: white; /* Color del texto */
+}
+
+#countdown {
+    position: absolute; /* Posición absoluta para situarla en la página */
+    top: 900px; /* Ajusta este valor para que esté justo debajo del header */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Para centrar correctamente */
+    color: white; /* Color del texto */
+    font-size: 36px; /* Tamaño del texto */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 1); /* Sombra para que resalte */
+    z-index: 100; /* Asegúrate de que esté encima de otros elementos */
+}
+
+#countdown-timer {
+    font-size: 2rem; /* Tamaño del texto */
+    font-family: 'Cinzel', serif; /* Fuente elegante */
+}
+
+#reviews {
+    text-align: center;
+    margin: 20px auto; /* Centrar y ajustar margen */
+    width: 300px; /* Ancho ajustado para ser más cuadrado */
+    height: 300px; /* Altura para mantener la forma cuadrada */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Sombra dorada */
+    overflow: hidden; /* Oculta el desbordamiento */
+}
+
+.review {
+    padding: -50px; /* Ajustar padding */
+    margin-top: -35px; /* Usa un valor negativo para moverlo hacia arriba */
+}
+
+.stars {
+    font-size: 1.5rem; /* Tamaño de la fuente de las estrellas */
+    color: gold; /* Color dorado para las estrellas */
+}
+
+#reviews {
+    position: absolute; /* Para que no afecte a otros elementos */
+    top: 1550px; /* Ajusta este valor según necesites */
+    left: 1485px; /* Mantén el margen izquierdo para moverlo a la derecha */
+    width: 300px; /* Ancho ajustado */
+    height: 300px; /* Altura ajustada */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Sombra dorada */
+    overflow: hidden; /* Oculta el desbordamiento */
+}
+
+.reviewer {
+    margin-bottom: 50px; /* Ajusta este valor para más o menos espacio */
+}
+
+#dress-code {
+    position: left bottom; /* Fijo en la pantalla */
+    bottom: 20px; /* Espacio desde abajo */
+    left: 20px; /* Espacio desde la izquierda */
+    background-color: rgba(255, 255, 255, 0); /* Fondo semitransparente */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    z-index: 1000; /* Por encima de otros elementos */
+}
+
+.cta-button {
+    display: inline-block; /* Asegúrate de que el botón se comporte como un bloque */
+    margin-top: 20px; /* Ajusta este valor para mover el botón más arriba o abajo */
+    padding: 10px 20px;
+    background-color: #ffcc00de; /* Cambia esto al color que prefieras */
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold; /* Hace que el texto sea negrita */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
