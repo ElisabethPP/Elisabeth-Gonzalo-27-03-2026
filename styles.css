@@ -15,6 +15,7 @@ body {
     background-repeat: no-repeat; 
     background-position: center; 
     color: #fff; 
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
 #trailer {
@@ -24,7 +25,7 @@ body {
     margin: 20px; /* Espaciado exterior */
     border-radius: 10px; /* Bordes redondeados */
     width: 300px; /* Ajusta el ancho de la sección */
-    text-align: left; /* Alinea el texto a la izquierda */
+    text-align: center; /* Alinea el texto a la izquierda */
     box-shadow: 0 0 15px rgb(255, 0, 0); /* Borde luminoso rojo */
     border: 2px solid rgba(255, 0, 0, 0.7); /* Borde rojo */
 }
@@ -74,6 +75,7 @@ header .poster {
     align-items: center; /* Centrar verticalmente */
     color: white; /* Cambia el color del texto a blanco */
     text-align: center; /* Alinea el texto en el centro */
+    background-attachment: fixed; /* Para evitar que se desplace al hacer scroll */
 }
 
 header .cta-button {
