@@ -400,164 +400,59 @@ body {
     font-weight: bold; /* Hace que el texto sea negrita */
 }
 
-/* Mobile Styles */
+/* Estilos generales para pantallas pequeñas */
 @media (max-width: 600px) {
-    header h1 {
-        font-size: 24px; /* Adjust as needed */
-    }
 
-    header p.names {
-        font-size: 18px; /* Adjust as needed */
-    }
-
-    section {
+    /* Fondo del header */
+    header .poster {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
         padding: 20px;
     }
 
-    .cast-member img {
-        width: 80px; /* Adjust as needed */
-        height: 80px; /* Adjust as needed */
-    }
-
-    #map iframe {
-        width: 100%;
-        height: 200px; /* Adjust as needed */
-    }
-}
-
-@media (max-width: 600px) {
-    .cta-button {
-        padding: 8px 16px;
-        font-size: 16px;
-        top: auto;
-        left: auto;
-        margin: 20px auto;
-        display: block;
-    }
-}
-
-@media (max-width: 600px) {
-    .cast-grid {
-        flex-direction: column; /* Alinea en una sola columna */
-        gap: 20px; /* Añade algo de espacio entre los elementos */
-    }
-
-    .cast-row {
-        flex-direction: column; /* Para que las filas se comporten como columnas */
-        align-items: center;
-        margin-left: 0; /* Resetea el margen para pantallas pequeñas */
-    }
-}
-
-@media (max-width: 600px) {
+    /* Título y nombres */
     header h1 {
         font-size: 24px;
-        left: 0;
-        padding: 20px 0;
         text-align: center;
-    }
-
-    header .cta-button {
-        left: 0;
-        top: auto;
-        margin: 20px auto;
-    }
-
-    #gallery img {
-        max-width: 100%; /* Ajusta el ancho de la imagen a la pantalla */
-        height: auto; /* Deja que la altura se ajuste automáticamente */
-    }
-
-    .cast-member img {
-        width: 60px; /* Disminuye el tamaño en pantallas pequeñas */
-        height: 60px;
-    }
-}
-
-@media (max-width: 600px) {
-    #map {
-        width: 100px;
-        height: 100px;
-        right: 10px;
-    }
-
-    #details {
-        top: auto;
-        right: 10px;
-        width: 90%;
-        padding: 10px;
-    }
-}
-
-@media (max-width: 600px) {
-    footer {
-        padding: 10px;
-        text-align: center;
-    }
-}
-
-@media (max-width: 600px) {
-    body {
-        background-size: cover; /* Asegura que la imagen de fondo cubra todo */
-        background-position: center; /* Centra la imagen */
-        background-attachment: fixed; /* Evita que se mueva al hacer scroll */
-    }
-
-    header .poster {
-        background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
-        background-position: center;
-        height: auto; /* Permitir que el header se ajuste a su contenido en móviles */
-        padding: 20px; /* Añade padding para mejorar el aspecto en móviles */
-    }
-}
-
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 24px; /* Reduce el tamaño del texto para móviles */
-        padding-top: 50px; /* Ajusta el espaciado superior */
-        left: 0; /* Centra el texto horizontalmente */
-        text-align: center;
+        padding-top: 50px;
     }
 
     header p.names {
-        font-size: 18px; /* Tamaño más pequeño del texto para nombres */
-        margin: 0 auto; /* Centrar el texto en móviles */
-        left: 0; /* Eliminar el desplazamiento hacia la izquierda */
+        font-size: 18px;
         text-align: center;
     }
 
+    /* Botón de llamada a la acción */
     header .cta-button {
-        padding: 10px 15px; /* Ajusta el tamaño del botón */
-        font-size: 14px; /* Reduce el tamaño de fuente en el botón */
-        left: 0; /* Centra el botón */
-        margin: 20px auto; /* Añade margen y centra en móviles */
+        font-size: 16px;
+        padding: 10px 20px;
         display: block;
+        margin: 20px auto;
         text-align: center;
     }
 
+    /* Detalles y mapa */
     #details {
-        width: 100%; /* Asegura que la sección de detalles ocupe todo el ancho en móviles */
-        position: relative; /* Cambia la posición a relativa para evitar superposiciones */
-        margin: 20px 0; /* Añade margen alrededor */
-        top: auto; /* Elimina la posición fija */
-        right: auto; /* Elimina la posición a la derecha */
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
     }
 
     #map {
-        width: 100%; /* Asegura que el mapa ocupe todo el ancho */
-        height: 200px; /* Ajusta la altura del mapa para móviles */
-        right: 0; /* Elimina el desplazamiento */
-        top: auto; /* Elimina la posición fija */
-        position: relative;
+        width: 100%;
+        height: 250px;
+        margin-top: 20px;
     }
-}
 
-@media (max-width: 600px) {
-    header .poster {
-        display: flex;
-        flex-direction: column; /* Coloca los elementos uno debajo del otro */
-        align-items: center; /* Centra los elementos horizontalmente */
-        justify-content: center; /* Centra los elementos verticalmente */
+    /* Evitar desplazamiento horizontal */
+    body {
+        overflow-x: hidden;
     }
 }
 
